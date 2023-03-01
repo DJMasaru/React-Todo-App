@@ -4,7 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+
 use phpDocumentor\Reflection\Types\Boolean;
+
 
 class Task extends Model
 {
@@ -18,4 +20,5 @@ class Task extends Model
     protected  $casts = [
         'is_done' => 'bool'
     ];
+
 }
