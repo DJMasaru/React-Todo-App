@@ -11,9 +11,10 @@ class TaskController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): \Illuminate\Support\Collection
     {
-        //
+//      order~の引数は、何を基準に並び替えるかを指定
+        return Task::orderByDesc('id')->get();
     }
 
     /**
@@ -21,7 +22,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        //新規作成の表示部分のため使わない。
     }
 
     /**
