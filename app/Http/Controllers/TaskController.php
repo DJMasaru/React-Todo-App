@@ -24,10 +24,10 @@ class TaskController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //新規作成の表示部分のため使わない。
-    }
+//    public function create()
+//    {
+//        //新規作成の表示部分のため使わない。
+//    }
 
     /**
      * Store a newly created resource in storage.
@@ -42,11 +42,12 @@ class TaskController extends Controller
         return $task
             ? response()->json($task, 201)
             : response()->json([], 500);
-
-    public function store(StoreTaskRequest $request)
-    {
-        //
     }
+
+//    public function store(StoreTaskRequest $request)
+//    {
+//        //
+//    }
 
     /**
      * Display the specified resource.
